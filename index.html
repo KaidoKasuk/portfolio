@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaido Kasuk – Software Engineer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lucide icons via CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  </head>
+  <body>
+    <!-- ══════════════ NAVBAR ══════════════ -->
+    <nav class="navbar">
+      <div class="navbar__inner">
+        <a href="#" class="navbar__brand">Kaido Kasuk</a>
+        <ul class="navbar__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#events">Events</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ══════════════ ABOUT ══════════════ -->
+    <section id="about">
+      <div class="about__inner fade-up">
+        <div class="about__avatar">
+          <img
+            src="https://images.unsplash.com/photo-1636935621723-8f91b0cc56eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwcG9ydHJhaXQlMjBwZXJzb258ZW58MXx8fHwxNzczNjk3Njg3fDA&ixlib=rb-4.1.0&q=80&w=400"
+            alt="Profile portrait"
+            onerror="
+              this.src =
+                'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODgiIGhlaWdodD0iODgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjOTk5IiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjMuNyI+PHJlY3QgeD0iMTYiIHk9IjE2IiB3aWR0aD0iNTYiIGhlaWdodD0iNTYiIHJ4PSI2Ii8+PHBhdGggZD0ibTE2IDU4IDE2LTE4IDMyIDMyIi8+PGNpcmNsZSBjeD0iNTMiIGN5PSIzNSIgcj0iNyIvPjwvc3ZnPg=='
+            "
+          />
+        </div>
+
+        <div class="about__content">
+          <div>
+            <h1 class="about__name">Hi, I'm Kaido</h1>
+            <p class="about__title">Software Engineer</p>
+          </div>
+
+          <div class="about__badge">
+            <span class="about__badge-dot"></span>
+            Free for work
+          </div>
+
+          <p class="about__bio">I am a software engineering student.</p>
+
+          <blockquote>
+            fascinated by what the IT industry does, what it is capable of doing
+            and how highly valued skill it is in today's society.
+          </blockquote>
+
+          <div class="about__actions">
+            <div class="about__buttons">
+              <a href="#works" class="btn btn--primary">View my works</a>
+              <a href="kaido.kasuk@voco.ee" class="btn btn--outline"
+                >Contact me</a
+              >
+            </div>
+
+            <div class="about__socials">
+              <a
+                href="https://github.com/KaidoKasuk"
+                title="GitHub"
+                class="social-link"
+              >
+                <svg
+                  width="16"
+                  height="19"
+                  viewBox="0 0 16 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.0096 17.5V14.1666C10.1256 13.1227 9.82624 12.0751 9.1763 11.25C11.6763 11.25 14.1763 9.58331 14.1763 6.66665C14.243 5.62498 13.9513 4.59998 13.343 3.74998C13.5763 2.79165 13.5763 1.79165 13.343 0.833313C13.343 0.833313 12.5096 0.833313 10.843 2.08331C8.64297 1.66665 6.3763 1.66665 4.1763 2.08331C2.50963 0.833313 1.6763 0.833313 1.6763 0.833313C1.4263 1.79165 1.4263 2.79165 1.6763 3.74998C1.06953 4.59655 0.775028 5.6273 0.842967 6.66665C0.842967 9.58331 3.34297 11.25 5.84297 11.25C5.51797 11.6583 5.2763 12.125 5.13463 12.625C4.99297 13.125 4.9513 13.65 5.00963 14.1666V17.5"
+                    stroke="#737373"
+                    stroke-width="1.66667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a
+                href="http://www.linkedin.com/in/kaido-kasuk-955899392"
+                title="LinkedIn"
+                class="social-link"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_280)">
+                    <path
+                      d="M13.3334 6.66669C14.6595 6.66669 15.9312 7.19347 16.8689 8.13115C17.8066 9.06884 18.3334 10.3406 18.3334 11.6667V17.5H15V11.6667C15 11.2247 14.8244 10.8007 14.5119 10.4882C14.1993 10.1756 13.7754 10 13.3334 10C12.8913 10 12.4674 10.1756 12.1549 10.4882C11.8423 10.8007 11.6667 11.2247 11.6667 11.6667V17.5H8.33337V11.6667C8.33337 10.3406 8.86016 9.06884 9.79784 8.13115C10.7355 7.19347 12.0073 6.66669 13.3334 6.66669Z"
+                      stroke="#737373"
+                      stroke-width="1.66667"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4.99996 7.5H1.66663V17.5H4.99996V7.5Z"
+                      stroke="#737373"
+                      stroke-width="1.66667"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3.33329 5.00002C4.25377 5.00002 4.99996 4.25383 4.99996 3.33335C4.99996 2.41288 4.25377 1.66669 3.33329 1.66669C2.41282 1.66669 1.66663 2.41288 1.66663 3.33335C1.66663 4.25383 2.41282 5.00002 3.33329 5.00002Z"
+                      stroke="#737373"
+                      stroke-width="1.66667"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_280">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="kaido.kasuk@voco.ee" title="Email" class="social-link">
+                <i
+                  data-lucide="mail"
+                  style="width: 1.25rem; height: 1.25rem"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ EDUCATION ══════════════ -->
+    <section id="education" class="section--border section--muted">
+      <div class="edu__inner">
+        <div class="section-heading fade-up">
+          <h2>Education</h2>
+          <p>My academic background and continuous learning.</p>
+        </div>
+
+        <div class="edu__grid">
+          <!-- Formal -->
+          <div class="edu__col">
+            <h3 class="fade-up">
+              <i
+                data-lucide="graduation-cap"
+                style="width: 1.25rem; height: 1.25rem; color: var(--sky-600)"
+              ></i>
+              Academic Journey
+            </h3>
+            <ul class="edu__timeline">
+              <li class="edu__item fade-left">
+                <div class="edu__dot">
+                  <i
+                    data-lucide="book-open"
+                    style="width: 1rem; height: 1rem"
+                  ></i>
+                </div>
+                <div class="edu__body">
+                  <h4>tartu rakenduslik kolledž</h4>
+                  <p class="degree">Software Engineer</p>
+                  <p class="period">2025 – Present</p>
+                  <p class="details">Traditional style school, session study</p>
+                </div>
+              </li>
+              <li class="edu__item fade-left delay-1">
+                <div class="edu__dot">
+                  <i
+                    data-lucide="book-open"
+                    style="width: 1rem; height: 1rem"
+                  ></i>
+                </div>
+                <div class="edu__body">
+                  <h4>Valga Gümnaasium</h4>
+                  <p class="degree">Middle school Education</p>
+                  <p class="period">2021 – 2024</p>
+                  <p class="details">Public school, economic focused</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Courses -->
+          <div class="edu__col fade-right">
+            <div class="courses-card">
+              <h3>
+                <i
+                  data-lucide="book-open"
+                  style="width: 1.25rem; height: 1.25rem; color: var(--sky-600)"
+                ></i>
+                Online Courses &amp; Certifications
+              </h3>
+              <ul class="courses-list">
+                <li>
+                  <i
+                    data-lucide="check-circle-2"
+                    style="width: 1.25rem; height: 1.25rem"
+                  ></i>
+                  Get Started using Google Analytics GA4
+                </li>
+                <li>
+                  <i
+                    data-lucide="check-circle-2"
+                    style="width: 1.25rem; height: 1.25rem"
+                  ></i>
+                  Manage GA Data and Learn to Read Reports
+                </li>
+                <li>
+                  <i
+                    data-lucide="check-circle-2"
+                    style="width: 1.25rem; height: 1.25rem"
+                  ></i>
+                  Sass For the Beginners Course – Let's go ahead
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ WORKS ══════════════ -->
+    <section id="works" class="section--muted" style="padding: 6rem 1.5rem">
+      <div class="works__inner">
+        <div class="section-heading fade-up">
+          <h2>My Works</h2>
+          <p>Current front-end and database projects I have done in school.</p>
+        </div>
+
+        <div class="works__grid">
+          <!-- Card 1 -->
+          <div class="work-card fade-up">
+            <a href="https://github.com/KaidoKasuk/epood">
+              <div class="work-card__img-wrap">
+                <img
+                  src="./assets/Kuvatõmmis 2026-03-28 111244.png"
+                  alt="Vanilla JS online shop"
+                  onerror="this.parentElement.style.background = '#e5e5e5'"
+                />
+                <div class="work-card__arrow">
+                  <i
+                    data-lucide="arrow-up-right"
+                    style="width: 1rem; height: 1rem"
+                  ></i>
+                </div>
+              </div>
+            </a>
+            <div class="work-card__body">
+              <h3 class="work-card__title">Vanilla JS online shop</h3>
+              <p class="work-card__desc">
+                Pure Javascript store while using one html file with different
+                views. Store items are fetched from fakestore api.
+              </p>
+              <div class="tags">
+                <span class="tag">React</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+              </div>
+              <a
+                href="https://github.com/KaidoKasuk/epood"
+                target="_blank"
+                rel="noopener"
+                class="work-card__github"
+              >
+                <i data-lucide="github" style="width: 1rem; height: 1rem"></i>
+                View on GitHub
+                <i
+                  data-lucide="external-link"
+                  style="width: 0.875rem; height: 0.875rem"
+                ></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="work-card fade-up delay-1">
+            <a href="https://vso25kasuk.ita.voco.ee/veebiarendus/hobileht/">
+              <div class="work-card__img-wrap">
+                <img
+                  src="assets/Kuvatõmmis 2026-03-28 105941.png"
+                  alt="Hobby inspired website"
+                  onerror="this.parentElement.style.background = '#e5e5e5'"
+                />
+                <div class="work-card__arrow">
+                  <i
+                    data-lucide="arrow-up-right"
+                    style="width: 1rem; height: 1rem"
+                  ></i>
+                </div>
+              </div>
+            </a>
+            <div class="work-card__body">
+              <h3 class="work-card__title">Hobby inspired website</h3>
+              <p class="work-card__desc">
+                First ever javascript project. Assigned by teacher to lock in
+                understanding of HTML and CSS.
+              </p>
+              <div class="tags">
+                <span class="tag">Javascript</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+              </div>
+              <a
+                href="https://github.com/KaidoKasuk/hobileht"
+                target="_blank"
+                rel="noopener"
+                class="work-card__github"
+              >
+                <i data-lucide="github" style="width: 1rem; height: 1rem"></i>
+                View on GitHub
+                <i
+                  data-lucide="external-link"
+                  style="width: 0.875rem; height: 0.875rem"
+                ></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="work-card fade-up delay-2">
+            <a href="https://github.com/KaidoKasuk/React-expenses">
+              <div class="work-card__img-wrap">
+                <img
+                  src="assets/Kuvatõmmis 2026-03-28 112041.png"
+                  alt="React expense tracker"
+                  onerror="this.parentElement.style.background = '#e5e5e5'"
+                />
+                <div class="work-card__arrow">
+                  <i
+                    data-lucide="arrow-up-right"
+                    style="width: 1rem; height: 1rem"
+                  ></i>
+                </div>
+              </div>
+            </a>
+            <div class="work-card__body">
+              <h3 class="work-card__title">React expense tracker</h3>
+              <p class="work-card__desc">
+                First react project with direct instructions. Login expenses are
+                stored in json file and can be fetched.
+              </p>
+              <div class="tags">
+                <span class="tag">Javascript</span>
+                <span class="tag">React</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+              </div>
+              <a
+                href="https://github.com/KaidoKasuk/React-expenses"
+                target="_blank"
+                rel="noopener"
+                class="work-card__github"
+              >
+                <i data-lucide="github" style="width: 1rem; height: 1rem"></i>
+                View on GitHub
+                <i
+                  data-lucide="external-link"
+                  style="width: 0.875rem; height: 0.875rem"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ EVENTS ══════════════ -->
+    <section
+      id="events"
+      class="section--border"
+      style="padding: 6rem 1.5rem; background: #fff"
+    >
+      <div class="events__inner">
+        <div class="events__heading fade-up">
+          <h2>Events &amp; Community</h2>
+          <p>
+            Where I share knowledge, build connections, and collaborate with the
+            tech community.
+          </p>
+        </div>
+
+        <div class="events__grid">
+          <!-- Hosted -->
+          <div class="events-col fade-left">
+            <h3>
+              <span class="events-col__icon events-col__icon--sky">
+                <i
+                  data-lucide="mic"
+                  style="width: 1.25rem; height: 1.25rem"
+                ></i>
+              </span>
+              Events I've Hosted
+            </h3>
+            <div class="event-card">
+              <div class="event-card__header">
+                <h4 class="event-card__title">VOCO Intership panel</h4>
+                <span class="event-card__date">March 2026</span>
+              </div>
+              <p class="event-card__location">VOCO school</p>
+              <p class="event-card__desc">
+                CO hosted an internship panel for students studying software
+                development with different popular companies in Estonia.
+              </p>
+            </div>
+          </div>
+
+          <!-- Participated -->
+          <div class="events-col fade-right">
+            <h3>
+              <span class="events-col__icon events-col__icon--neutral">
+                <i
+                  data-lucide="users"
+                  style="width: 1.25rem; height: 1.25rem"
+                ></i>
+              </span>
+              Events I've Participated In
+            </h3>
+            <ul class="timeline-list">
+              <li class="timeline-item">
+                <div class="timeline-dot">
+                  <div class="timeline-dot-inner"></div>
+                </div>
+                <div class="timeline-body">
+                  <h4>Delta karjaaripaev 2026</h4>
+                  <div class="timeline-meta">
+                    <span class="loc"
+                      >Tartu Ülikooli akadeemiline spordiklubi</span
+                    >
+                    <span>•</span>
+                    <span>February 2026</span>
+                  </div>
+                  <p class="timeline-desc">
+                    Companies introduced their internship and career
+                    opportunities.
+                  </p>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-dot">
+                  <div class="timeline-dot-inner"></div>
+                </div>
+                <div class="timeline-body">
+                  <h4>Hackathon</h4>
+                  <div class="timeline-meta">
+                    <span class="loc">VOCO school</span>
+                    <span>•</span>
+                    <span>March 2026</span>
+                  </div>
+                  <p class="timeline-desc">
+                    First ever Hackathon to experience close teamwork in small
+                    teams quickly. We made social card game to groups to break
+                    ice.
+                  </p>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-dot">
+                  <div class="timeline-dot-inner"></div>
+                </div>
+                <div class="timeline-body">
+                  <h4>Visiting Register OÜ</h4>
+                  <div class="timeline-meta">
+                    <span class="loc">Tartu Tähe tn 129b</span>
+                    <span>•</span>
+                    <span>March 2026</span>
+                  </div>
+                  <p class="timeline-desc">
+                    Visited Register OÜ to discuss about today's IT industry and
+                    pros and cons working in smaller teams.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ EXPERIENCE ══════════════ -->
+    <section
+      id="experience"
+      class="section--border"
+      style="padding: 6rem 1.5rem; background: #fff"
+    >
+      <div class="exp__inner">
+        <div class="section-heading fade-up">
+          <h2>Work Experience</h2>
+          <p>My current journey and early career steps.</p>
+        </div>
+
+        <div class="exp__grid">
+          <div class="exp-card fade-up">
+            <div class="exp-card__icon">
+              <i
+                data-lucide="briefcase"
+                style="width: 1.25rem; height: 1.25rem"
+              ></i>
+            </div>
+            <p class="exp-card__role">Military service</p>
+            <p class="exp-card__company">Estonian mandatory military</p>
+            <p class="exp-card__period">
+              <i
+                data-lucide="calendar"
+                style="width: 0.875rem; height: 0.875rem"
+              ></i>
+              2024
+            </p>
+            <p class="exp-card__desc">
+              Learned protecting, securing, prioritizing, logical thinking and
+              ensuring safety.
+            </p>
+          </div>
+
+          <div class="exp-card fade-up delay-1">
+            <div class="exp-card__icon">
+              <i
+                data-lucide="briefcase"
+                style="width: 1.25rem; height: 1.25rem"
+              ></i>
+            </div>
+            <p class="exp-card__role">Customer service employee</p>
+            <p class="exp-card__company">Selver AS</p>
+            <p class="exp-card__period">
+              <i
+                data-lucide="calendar"
+                style="width: 0.875rem; height: 0.875rem"
+              ></i>
+              Feb 2026 – today
+            </p>
+            <p class="exp-card__desc">
+              Part time job to keep me busy after school, limiting my time to
+              organize personal life and school requirement to be more
+              effective.
+            </p>
+          </div>
+
+          <div class="exp-card fade-up delay-2">
+            <div class="exp-card__icon">
+              <i
+                data-lucide="briefcase"
+                style="width: 1.25rem; height: 1.25rem"
+              ></i>
+            </div>
+            <p class="exp-card__role">Customer service employee</p>
+            <p class="exp-card__company">Tõrva VM OÜ</p>
+            <p class="exp-card__period">
+              <i
+                data-lucide="calendar"
+                style="width: 0.875rem; height: 0.875rem"
+              ></i>
+              2023 and 2024 summer
+            </p>
+            <p class="exp-card__desc">
+              My first real job at water spa. Learned taking responsibility,
+              making systems, teamwork, communicating with clients and
+              maintaining team relationships.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ TOOLS ══════════════ -->
+    <section
+      id="tools"
+      class="section--border"
+      style="padding: 6rem 1.5rem; background: #fff"
+    >
+      <div class="tools__inner">
+        <div class="section-heading fade-up">
+          <h2>Tools &amp; Resources</h2>
+          <p>Current tools that power my workflow and learning process.</p>
+        </div>
+
+        <div class="tools__grid">
+          <div class="tool-card tool-card--pink fade-up">
+            <div class="tool-card__icon">
+              <i
+                data-lucide="pen-tool"
+                style="width: 1.5rem; height: 1.5rem"
+              ></i>
+            </div>
+            <div>
+              <p class="tool-card__name">Figma</p>
+              <p class="tool-card__desc">
+                Promoted by school to create mockup websites
+              </p>
+            </div>
+          </div>
+
+          <div class="tool-card tool-card--gray fade-up delay-1">
+            <div class="tool-card__icon">
+              <i
+                data-lucide="database"
+                style="width: 1.5rem; height: 1.5rem"
+              ></i>
+            </div>
+            <div>
+              <p class="tool-card__name">Notion</p>
+              <p class="tool-card__desc">
+                My go-to tool for tracking tasks, and organizing my learning
+                resources.
+              </p>
+            </div>
+          </div>
+
+          <div class="tool-card tool-card--amber fade-up delay-2">
+            <div class="tool-card__icon">
+              <i data-lucide="code" style="width: 1.5rem; height: 1.5rem"></i>
+            </div>
+            <div>
+              <p class="tool-card__name">Claude</p>
+              <p class="tool-card__desc">
+                My go-to LLM for school projects and learning databases.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ GALLERY ══════════════ -->
+    <section
+      id="gallery"
+      class="section--dark"
+      style="padding: 6rem 1.5rem; border-top: 1px solid #262626"
+    >
+      <div class="gallery__inner">
+        <div class="gallery__heading fade-up">
+          <h2>Gallery</h2>
+          <p>Glimpses of my workspace.</p>
+        </div>
+
+        <div class="gallery__grid">
+          <div class="gallery-item fade-up">
+            <img
+              src="https://images.unsplash.com/photo-1625461291092-13d0c45608b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+              alt="Workspace"
+            />
+          </div>
+          <div class="gallery-item fade-up delay-1">
+            <img
+              src="https://images.unsplash.com/photo-1660496379804-b408bfacc9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+              alt="Keyboard"
+            />
+          </div>
+          <div class="gallery-item fade-up delay-2">
+            <img
+              src="https://images.unsplash.com/photo-1635304901524-753da4a6a5bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+              alt="Coffee plant"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ FOOTER ══════════════ -->
+    <footer>
+      <div class="footer__inner">
+        <p>© <span id="year"></span> Kaido Kasuk. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Current year in footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Render Lucide icons
+      lucide.createIcons();
+
+      // Scroll-triggered fade-in
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 },
+      );
+
+      document
+        .querySelectorAll(".fade-up, .fade-left, .fade-right")
+        .forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
