@@ -21,10 +21,10 @@
         <a href="#" class="navbar__brand">Kaido Kasuk</a>
         <ul class="navbar__links">
           <li><a href="#about">About</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#works">Works</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#education">Education</a></li>
-          <li><a href="#works">Works</a></li>
-          <li><a href="#events">Events</a></li>
         </ul>
       </div>
     </nav>
@@ -33,14 +33,7 @@
     <section id="about">
       <div class="about__inner fade-up">
         <div class="about__avatar">
-          <img
-            src="https://images.unsplash.com/photo-1636935621723-8f91b0cc56eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwcG9ydHJhaXQlMjBwZXJzb258ZW58MXx8fHwxNzczNjk3Njg3fDA&ixlib=rb-4.1.0&q=80&w=400"
-            alt="Profile portrait"
-            onerror="
-              this.src =
-                'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODgiIGhlaWdodD0iODgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjOTk5IiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjMuNyI+PHJlY3QgeD0iMTYiIHk9IjE2IiB3aWR0aD0iNTYiIGhlaWdodD0iNTYiIHJ4PSI2Ii8+PHBhdGggZD0ibTE2IDU4IDE2LTE4IDMyIDMyIi8+PGNpcmNsZSBjeD0iNTMiIGN5PSIzNSIgcj0iNyIvPjwvc3ZnPg=='
-            "
-          />
+          <img src="/assets/croppedIMG_3781.jpg" alt="Profile portrait" />
         </div>
 
         <div class="about__content">
@@ -49,16 +42,16 @@
             <p class="about__title">Software Engineer</p>
           </div>
 
-          <div class="about__badge">
-            <span class="about__badge-dot"></span>
-            Free for work
-          </div>
-
           <p class="about__bio">I am a software engineering student.</p>
 
           <blockquote>
             fascinated by what the IT industry does, what it is capable of doing
-            and how highly valued skill it is in today's society.
+            and how highly valued skill it is in today's society. Currently i am
+            first year student, this year I learned<br />Webdev: HTML, CSS, JS,
+            React
+            <br />
+            Database: Mysql <br />
+            Project management: First client project
           </blockquote>
 
           <div class="about__actions">
@@ -133,7 +126,12 @@
                   </defs>
                 </svg>
               </a>
-              <a href="kaido.kasuk@voco.ee" title="Email" class="social-link">
+              <a
+                type="Email"
+                href="kaido.kasuk@voco.ee"
+                title="Email"
+                class="social-link"
+              >
                 <i
                   data-lucide="mail"
                   style="width: 1.25rem; height: 1.25rem"
@@ -153,32 +151,19 @@
       <div class="events__inner">
         <div class="events__heading fade-up">
           <h2>What I've Been Up To</h2>
-          <p>
-            Achievements, events, and milestones that shaped my journey in tech.
-          </p>
+          <p>Achievements, events, and milestones</p>
         </div>
 
         <div class="events__grid">
           <!-- All Events - Clickable Cards -->
-          <div class="event-card fade-up" data-modal-id="event-1">
+          <div class="event-card fade-up" data-modal-id="event-1" id="myevent">
             <div class="event-card__header">
               <h4 class="event-card__title">
                 Hosted Internship Panel Discussion
               </h4>
               <span class="event-card__date">March 2026</span>
             </div>
-            <p class="event-card__location">
-              <i
-                data-lucide="mic"
-                style="
-                  width: 1rem;
-                  height: 1rem;
-                  vertical-align: middle;
-                  margin-right: 0.25rem;
-                "
-              ></i>
-              VOCO school
-            </p>
+            <p class="event-card__location">VOCO school</p>
             <p class="event-card__desc">
               I hosted and coordinated an internship panel discussing internship
               for software students in VOCO. Event featured guests from Telia,
@@ -186,6 +171,7 @@
               playtech.
             </p>
             <span class="event-badge event-badge--hosted">Hosted</span>
+            <span class="event-badge event-badge--event">Event</span>
           </div>
 
           <div class="event-card fade-up delay-1" data-modal-id="event-2">
@@ -193,18 +179,7 @@
               <h4 class="event-card__title">First Hackathon</h4>
               <span class="event-card__date">March 2026</span>
             </div>
-            <p class="event-card__location">
-              <i
-                data-lucide="code"
-                style="
-                  width: 1rem;
-                  height: 1rem;
-                  vertical-align: middle;
-                  margin-right: 0.25rem;
-                "
-              ></i>
-              VOCO school
-            </p>
+            <p class="event-card__location">VOCO school</p>
             <p class="event-card__desc">
               Shipped a social icebreaker card game under in 2 days with the
               team of 3. Learned rapid prototyping and collaboration and use of
@@ -239,71 +214,15 @@
 
           <div class="event-card fade-up delay-3" data-modal-id="event-4">
             <div class="event-card__header">
-              <h4 class="event-card__title">Delta Career Fair</h4>
+              <h4 class="event-card__title">First client project</h4>
               <span class="event-card__date">February 2026</span>
             </div>
-            <p class="event-card__location">
-              <i
-                data-lucide="users"
-                style="
-                  width: 1rem;
-                  height: 1rem;
-                  vertical-align: middle;
-                  margin-right: 0.25rem;
-                "
-              ></i>
-              Tartu Ülikooli akadeemiline spordiklubi
-            </p>
+            <p class="event-card__location">VOCO School</p>
             <p class="event-card__desc">
-              Explored internship opportunities in the Estonian tech scene.
+              Made simple WordPress webiste to small business. Project main
+              focus was expriencing project with team.
             </p>
-            <span class="event-badge event-badge--event">Event</span>
-          </div>
-          <div class="event-card fade-up delay-3" data-modal-id="event-4">
-            <div class="event-card__header">
-              <h4 class="event-card__title">Networked at Delta Career Fair</h4>
-              <span class="event-card__date">February 2026</span>
-            </div>
-            <p class="event-card__location">
-              <i
-                data-lucide="users"
-                style="
-                  width: 1rem;
-                  height: 1rem;
-                  vertical-align: middle;
-                  margin-right: 0.25rem;
-                "
-              ></i>
-              Tartu Ülikooli akadeemiline spordiklubi
-            </p>
-            <p class="event-card__desc">
-              Connected with major tech companies and explored internship
-              opportunities in the Estonian tech scene.
-            </p>
-            <span class="event-badge event-badge--event">Event</span>
-          </div>
-          <div class="event-card fade-up delay-3" data-modal-id="event-4">
-            <div class="event-card__header">
-              <h4 class="event-card__title">Networked at Delta Career Fair</h4>
-              <span class="event-card__date">February 2026</span>
-            </div>
-            <p class="event-card__location">
-              <i
-                data-lucide="users"
-                style="
-                  width: 1rem;
-                  height: 1rem;
-                  vertical-align: middle;
-                  margin-right: 0.25rem;
-                "
-              ></i>
-              Tartu Ülikooli akadeemiline spordiklubi
-            </p>
-            <p class="event-card__desc">
-              Connected with major tech companies and explored internship
-              opportunities in the Estonian tech scene.
-            </p>
-            <span class="event-badge event-badge--event">Event</span>
+            <span class="event-badge event-badge--project">Project</span>
           </div>
         </div>
       </div>
@@ -636,106 +555,19 @@
       </div>
     </section>
 
-    <!-- ══════════════ TOOLS ══════════════ -->
-    <section
-      id="tools"
-      class="section--border"
-      style="padding: 6rem 1.5rem; background: #fff"
-    >
-      <div class="tools__inner">
-        <div class="section-heading fade-up">
-          <h2>Tools &amp; Resources</h2>
-          <p>Current tools that power my workflow and learning process.</p>
-        </div>
-
-        <div class="tools__grid">
-          <div class="tool-card tool-card--pink fade-up">
-            <div class="tool-card__icon">
-              <i
-                data-lucide="pen-tool"
-                style="width: 1.5rem; height: 1.5rem"
-              ></i>
-            </div>
-            <div>
-              <p class="tool-card__name">Figma</p>
-              <p class="tool-card__desc">
-                Promoted by school to create mockup websites
-              </p>
-            </div>
-          </div>
-
-          <div class="tool-card tool-card--gray fade-up delay-1">
-            <div class="tool-card__icon">
-              <i
-                data-lucide="database"
-                style="width: 1.5rem; height: 1.5rem"
-              ></i>
-            </div>
-            <div>
-              <p class="tool-card__name">Notion</p>
-              <p class="tool-card__desc">
-                My go-to tool for tracking tasks, and organizing my learning
-                resources.
-              </p>
-            </div>
-          </div>
-
-          <div class="tool-card tool-card--amber fade-up delay-2">
-            <div class="tool-card__icon">
-              <i data-lucide="code" style="width: 1.5rem; height: 1.5rem"></i>
-            </div>
-            <div>
-              <p class="tool-card__name">Claude</p>
-              <p class="tool-card__desc">
-                My go-to LLM for school projects and learning databases.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════ GALLERY ══════════════ -->
-    <section
-      id="gallery"
-      class="section--dark"
-      style="padding: 6rem 1.5rem; border-top: 1px solid #262626"
-    >
-      <div class="gallery__inner">
-        <div class="gallery__heading fade-up">
-          <h2>Gallery</h2>
-          <p>Glimpses of my workspace.</p>
-        </div>
-
-        <div class="gallery__grid">
-          <div class="gallery-item fade-up">
-            <img
-              src="https://images.unsplash.com/photo-1625461291092-13d0c45608b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
-              alt="Workspace"
-            />
-          </div>
-          <div class="gallery-item fade-up delay-1">
-            <img
-              src="https://images.unsplash.com/photo-1660496379804-b408bfacc9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
-              alt="Keyboard"
-            />
-          </div>
-          <div class="gallery-item fade-up delay-2">
-            <img
-              src="https://images.unsplash.com/photo-1635304901524-753da4a6a5bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
-              alt="Coffee plant"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- ══════════════ FOOTER ══════════════ -->
     <footer>
       <div class="footer__inner">
         <p>© <span id="year"></span> Kaido Kasuk. All rights reserved.</p>
       </div>
     </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox__close" type="button" aria-label="Close image">
+        ×
+      </button>
+      <img class="lightbox__image" src="" alt="" />
+    </div>
 
     <script>
       // Current year in footer
@@ -766,30 +598,39 @@
         "event-1": {
           title: "Led Internship Panel Discussion",
           content: `
+            <img src="/assets/voco intership panel.JPG" alt="Internship Panel" style="width: 100%; height: auto; margin-bottom: 1.5rem; border-radius: 0.5rem;">
             <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--neutral-900)">Led Internship Panel Discussion</h3>
-            <p>In March 2026, I successfully organized and hosted an internship panel at VOCO school featuring industry leaders from top Estonian tech companies. This was a significant achievement in building my community presence and demonstrating leadership.</p>
+            <p>In March 2026, I successfully organized and cohosted an internship panel at VOCO school featuring industry leaders from top Estonian tech companies. This was a significant achievement demonstrating leadership and managing events.</p>
+            <p>Event featured guests from Telia,
+              Astro Baltics, GotoAndPlay, Praktikal, Concise Solutsions,
+              playtech.<p>
             <p style="margin-top: 1rem"><strong>What I learned:</strong></p>
             <ul style="margin-top: 0.5rem; margin-left: 1.5rem; color: var(--neutral-600)">
               <li>Public speaking and event coordination</li>
-              <li>Networking with industry professionals</li>
               <li>Understanding career paths in tech</li>
-              <li>Creating value for the student community</li>
+              <li>Creating value for the student community and for the school</li>
             </ul>
+             <img src="/assets/panel2.jpg" alt="Internship Panel" style="width: 100%; height: auto; margin-bottom: 1.5rem; border-radius: 0.5rem;">
+           <img src="/assets/panel3.jpg" alt="Internship Panel" style="width: 100%; height: auto; margin-bottom: 1.5rem; border-radius: 0.5rem;">
+
           `,
         },
         "event-2": {
-          title: "Crushed First Hackathon",
+          title: "First Hackathon",
           content: `
-            <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--neutral-900)">Crushed First Hackathon</h3>
-            <p>My first hackathon experience at VOCO school was intense and rewarding. Under time pressure, my team and I shipped a social icebreaker card game designed to help groups break the ice and build connections.</p>
+           <img src="/assets/sync.png" alt="sync" style="width: 100%; height: auto; margin-bottom: 1.5rem; border-radius: 0.5rem;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--neutral-900)"> First Hackathon</h3>
+            <p>My first hackathon experience at VOCO school was fun and intresting.Hackthon team was social icebreaker game.  My team and I shipped a social icebreaker card game designed to help groups break the ice and find who in groups are similar and the opposites. Prototype can be played at <a href=" https://sync-byye.onrender.com/">sync-byye.onrender.com</a></p>
+
             <p style="margin-top: 1rem"><strong>Key achievements:</strong></p>
             <ul style="margin-top: 0.5rem; margin-left: 1.5rem; color: var(--neutral-600)">
+               <li>Learned how hackathons work</li>
               <li>Delivered a working game prototype in limited time</li>
-              <li>Collaborated effectively in a small, dynamic team</li>
-              <li>Learned rapid prototyping and iteration</li>
-              <li>Gained practical experience with time management</li>
+              <li>Collaborated effectively in a small team</li>
+              <li>Learned quick prototyping and iteration</li>
+              <li>Gained practical experience how </li>
             </ul>
-            <p style="margin-top: 1rem"><strong>Team size:</strong> 3 people | <strong>Duration:</strong> Full day sprint</p>
+            <p style="margin-top: 1rem"><strong>Team size:</strong> 3 people <strong>Duration:</strong> two days</p>
           `,
         },
         "event-3": {
@@ -801,25 +642,28 @@
             <ul style="margin-top: 0.5rem; margin-left: 1.5rem; color: var(--neutral-600)">
               <li>How small teams operate efficiently and with high autonomy</li>
               <li>The pros and cons of working in smaller companies vs enterprises</li>
-              <li>Real-world software development practices</li>
+              <li>Real-world software development, everthing is automated </li>
               <li>Industry perspectives on hiring and career growth</li>
             </ul>
             <p style="margin-top: 1rem"><strong>Location:</strong> Tartu Tähe tn 129b</p>
           `,
         },
         "event-4": {
-          title: "Networked at Delta Career Fair",
+          title: "My first client project",
           content: `
-            <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--neutral-900)">Networked at Delta Career Fair</h3>
-            <p>Attended the Delta career fair in February 2026 at Tartu Ülikooli akadeemiline spordiklubi, where I connected with major Estonian tech companies and explored internship and career opportunities.</p>
-            <p style="margin-top: 1rem"><strong>Opportunities explored:</strong></p>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--neutral-900)">First Client project</h3>
+            <p>In a team of three I was the main developer and later the leader since team leader left the project. Project took over 3 months.</p>
+              <p> Most of the porject time was learning theory and working though every step from theory</p>
+            <p style="margin-top: 1rem"><strong>Main Theory we went through</strong></p>
             <ul style="margin-top: 0.5rem; margin-left: 1.5rem; color: var(--neutral-600)">
-              <li>Internship positions at leading tech companies</li>
-              <li>Full-time software engineer roles</li>
-              <li>Mentorship and guidance from industry professionals</li>
-              <li>Understanding the Estonian tech job market</li>
+              <li>SWOT</li>
+              <li>as is and to be</li>
+              <li>Training plan for client</li>
+              <li>Personas for the webiste</li>
+              <li>User Stories</li>
+               <li>Test plan</li>
             </ul>
-            <p style="margin-top: 1rem"><strong>Outcome:</strong> Made valuable connections and expanded my professional network in the local tech community.</p>
+
           `,
         },
       };
@@ -857,6 +701,30 @@
       modalOverlay.addEventListener("click", closeModal);
       document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") closeModal();
+      });
+
+      const themeToggle = document.getElementById("theme-toggle");
+      const themeIcon = themeToggle.querySelector("i");
+      const storedTheme = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)",
+      ).matches;
+      const initialTheme = storedTheme || (prefersDark ? "dark" : "light");
+
+      function setTheme(theme) {
+        document.body.classList.toggle("dark", theme === "dark");
+        themeIcon.dataset.lucide = theme === "dark" ? "sun" : "moon";
+        lucide.createIcons();
+      }
+
+      setTheme(initialTheme);
+
+      themeToggle.addEventListener("click", () => {
+        const nextTheme = document.body.classList.contains("dark")
+          ? "light"
+          : "dark";
+        setTheme(nextTheme);
+        localStorage.setItem("theme", nextTheme);
       });
     </script>
   </body>
