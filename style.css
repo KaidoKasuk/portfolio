@@ -818,7 +818,9 @@ img {
   max-width: 600px;
   width: 90%;
   max-height: 85vh;
-  overflow-y: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   opacity: 0;
   visibility: hidden;
   transition:
@@ -838,6 +840,7 @@ img {
   align-items: center;
   padding: 1.5rem;
   border-bottom: 1px solid var(--neutral-100);
+  flex: 0 0 auto;
 }
 .modal__close {
   background: none;
@@ -859,6 +862,8 @@ img {
 }
 .modal__content {
   padding: 2rem 1.5rem;
+  overflow-y: auto;
+  max-height: calc(85vh - 5rem);
 }
 .modal__content h2 {
   font-size: 1.875rem;
