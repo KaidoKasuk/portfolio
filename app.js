@@ -40,7 +40,7 @@ const modalData = {
       </ul>
        <img src="./assets/panel2.jpg" alt="Internship Panel" style="width: 100%; height: auto; margin-bottom: 1.5rem; border-radius: 0.5rem;">
      <img src="./assets/panel3.jpg" alt="Internship Panel" style="width: 100%; height: auto; margin-bottom: 1.5rem; border-radius: 0.5rem;">
-
+ <img src="./assets/P3050001.jpg" alt="Internship Panel prep" style="width: 100%; height: auto; margin-bottom: 1.5rem; border-radius: 0.5rem;">
     `,
   },
   "event-2": {
@@ -79,6 +79,8 @@ const modalData = {
   "event-4": {
     title: "My first client project",
     content: `
+     <img src="./assets/clientprojectaboutme.png" alt="Internship Panel prep" style="width: 100%; height: auto; margin-bottom: 1.5rem; border-radius: 0.5rem;">
+
       <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--neutral-900)">First Client project</h3>
       <p>In a team of three I was the main developer and later the leader since team leader left the project. Project took over 3 months.</p>
         <p> Most of the porject time was learning theory and working though every step from theory</p>
