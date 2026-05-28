@@ -40,7 +40,7 @@ const modalData = {
       </ul>
        <img src="./assets/panel2.jpg" alt="Internship Panel" style="width: 100%; height: auto; margin-bottom: 1.5rem; border-radius: 0.5rem;">
      <img src="./assets/panel3.jpg" alt="Internship Panel" style="width: 100%; height: auto; margin-bottom: 1.5rem; border-radius: 0.5rem;">
- <img src="./assets/P3050001.jpg" alt="Internship Panel prep" style="width: 100%; height: auto; margin-bottom: 1.5rem; border-radius: 0.5rem;">
+ <img src="./assets/panelprep.JPG" alt="Internship Panel prep" style="width: 100%; height: auto; margin-bottom: 1.5rem; border-radius: 0.5rem;">
     `,
   },
   "event-2": {
