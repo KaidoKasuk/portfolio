@@ -1,6 +1,23 @@
 // Current year in footer
 document.getElementById("year").textContent = new Date().getFullYear();
 
+// Burger menu toggle
+const navBurger = document.getElementById("navBurger");
+const navMenu = document.getElementById("navMenu");
+
+navBurger.addEventListener("click", () => {
+  navBurger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
+
+// Close menu when clicking on a link
+document.querySelectorAll(".navbar__links a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navBurger.classList.remove("active");
+    navMenu.classList.remove("active");
+  });
+});
+
 // Render Lucide icons
 lucide.createIcons();
 
@@ -33,14 +50,13 @@ const modalData = {
         Astro Baltics, GotoAndPlay, Praktikal, Concise Solutsions,
         playtech.<p>
       <p style="margin-top: 1rem"><strong>What I learned:</strong></p>
-      <ul style="margin-top: 0.5rem; margin-left: 1.5rem; color: var(--neutral-600)">
+      <ul style="margin-top: 0.5rem; margin-left: 1.5rem; margin-bottom: 1.5rem; color: var(--neutral-600)">
         <li>Public speaking and event coordination</li>
         <li>Understanding career paths in tech</li>
         <li>Creating value for the student community and for the school</li>
       </ul>
        <img src="./assets/panel2.jpg" alt="Internship Panel" style="width: 100%; height: auto; margin-bottom: 1.5rem; border-radius: 0.5rem;">
-     <img src="./assets/panel3.jpg" alt="Internship Panel" style="width: 100%; height: auto; margin-bottom: 1.5rem; border-radius: 0.5rem;">
- <img src="./assets/panelprep.JPG" alt="Internship Panel prep" style="width: 100%; height: auto; margin-bottom: 1.5rem; border-radius: 0.5rem;">
+     
     `,
   },
   "event-2": {
@@ -48,7 +64,7 @@ const modalData = {
     content: `
      <img src="./assets/sync.png" alt="sync" style="width: 100%; height: auto; margin-bottom: 1.5rem; border-radius: 0.5rem;">
       <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--neutral-900)"> First Hackathon</h3>
-      <p>My first hackathon experience at VOCO school was fun and intresting.Hackthon team was social icebreaker game.  My team and I shipped a social icebreaker card game designed to help groups break the ice and find who in groups are similar and the opposites. Prototype can be played at <a href=" https://sync-byye.onrender.com/">sync-byye.onrender.com</a></p>
+      <p>My first hackathon experience at VOCO school was fun and intresting. Hackthon team was social icebreaker game.  My team and I shipped a social icebreaker card game designed to help groups break the ice and find who in groups are similar and the opposites. Prototype can be played at <a href=" https://sync-byye.onrender.com/">sync-byye.onrender.com</a></p>
 
       <p style="margin-top: 1rem"><strong>Key achievements:</strong></p>
       <ul style="margin-top: 0.5rem; margin-left: 1.5rem; color: var(--neutral-600)">

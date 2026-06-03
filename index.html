@@ -19,7 +19,12 @@
     <nav class="navbar">
       <div class="navbar__inner">
         <a href="#" class="navbar__brand">Kaido Kasuk</a>
-        <ul class="navbar__links">
+        <button class="navbar__burger" id="navBurger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="navbar__links" id="navMenu">
           <li><a href="#about">About</a></li>
           <li><a href="#events">Events</a></li>
           <li><a href="#works">Works</a></li>
@@ -33,24 +38,23 @@
     <section id="about">
       <div class="about__inner fade-up">
         <div class="about__avatar">
-          <img src="./assets/croppedIMG_3781.jpg" alt="Profile portrait" />
+          <img src="./assets/panelprep.JPG" alt="Profile portrait" />
         </div>
 
         <div class="about__content">
           <div>
             <h1 class="about__name">Hi, I'm Kaido</h1>
-            <p class="about__title">Software Engineer</p>
           </div>
 
           <p class="about__bio">I am a software engineering student.</p>
 
           <blockquote>
-            fascinated by what the IT industry does, what it is capable of doing
-            and how highly valued skill it is in today's society. Currently i am
+            Fascinated by what the IT industry does, what it is capable of doing
+            and how highly valued skill it is in today's society. Currently I am
             first year student, this year I learned<br />Webdev: HTML, CSS, JS,
             React
             <br />
-            Database: Mysql <br />
+            Database: MySQL <br />
             Project management: First client project
           </blockquote>
 
@@ -142,109 +146,12 @@
         </div>
       </div>
     </section>
-    <!-- ══════════════ WHAT I'VE BEEN UP TO ══════════════ -->
-    <section
-      id="events"
-      class="section--border"
-      style="padding: 6rem 1.5rem; background: #fff"
-    >
-      <div class="events__inner">
-        <div class="events__heading fade-up">
-          <h2>What I've Been Up To</h2>
-          <p>Achievements, events, and milestones</p>
-        </div>
-
-        <div class="events__grid">
-          <!-- All Events - Clickable Cards -->
-          <div class="event-card fade-up" data-modal-id="event-1" id="myevent">
-            <div class="event-card__header">
-              <h4 class="event-card__title">
-                Hosted Internship Panel Discussion
-              </h4>
-              <span class="event-card__date">March 2026</span>
-            </div>
-            <p class="event-card__location">VOCO school</p>
-            <p class="event-card__desc">
-              I hosted and coordinated an internship panel discussing internship
-              for software students in VOCO. Event featured guests from Telia,
-              Astro Baltics, GotoAndPlay, Praktikal, Concise Solutsions,
-              playtech.
-            </p>
-            <span class="event-badge event-badge--hosted">Hosted</span>
-            <span class="event-badge event-badge--event">Event</span>
-          </div>
-
-          <div class="event-card fade-up delay-1" data-modal-id="event-2">
-            <div class="event-card__header">
-              <h4 class="event-card__title">First Hackathon</h4>
-              <span class="event-card__date">March 2026</span>
-            </div>
-            <p class="event-card__location">VOCO school</p>
-            <p class="event-card__desc">
-              Shipped a social icebreaker card game under in 2 days with the
-              team of 3. Learned rapid prototyping and collaboration and use of
-              AI.
-            </p>
-            <span class="event-badge event-badge--project">Project</span>
-          </div>
-
-          <div class="event-card fade-up delay-2" data-modal-id="event-3">
-            <div class="event-card__header">
-              <h4 class="event-card__title">Visited Register OÜ</h4>
-              <span class="event-card__date">March 2026</span>
-            </div>
-            <p class="event-card__location">
-              <i
-                data-lucide="building-2"
-                style="
-                  width: 1rem;
-                  height: 1rem;
-                  vertical-align: middle;
-                  margin-right: 0.25rem;
-                "
-              ></i>
-              Tartu Tähe tn 129b
-            </p>
-            <p class="event-card__desc">
-              Gained industry insights on IT careers and the advantages of
-              working in small teams.
-            </p>
-            <span class="event-badge event-badge--event">Event</span>
-          </div>
-
-          <div class="event-card fade-up delay-3" data-modal-id="event-4">
-            <div class="event-card__header">
-              <h4 class="event-card__title">First client project</h4>
-              <span class="event-card__date">February 2026</span>
-            </div>
-            <p class="event-card__location">VOCO School</p>
-            <p class="event-card__desc">
-              Made simple WordPress webiste to small business. Project main
-              focus was expriencing project with team.
-            </p>
-            <span class="event-badge event-badge--project">Project</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════ MODAL ══════════════ -->
-    <div class="modal-overlay" id="modal-overlay"></div>
-    <div class="modal" id="modal">
-      <div class="modal__header">
-        <button class="modal__close" id="modal-close" aria-label="Close modal">
-          <i data-lucide="x" style="width: 1.5rem; height: 1.5rem"></i>
-        </button>
-      </div>
-      <div class="modal__content" id="modal-content"></div>
-    </div>
-
     <!-- ══════════════ WORKS ══════════════ -->
     <section id="works" class="section--muted" style="padding: 6rem 1.5rem">
       <div class="works__inner">
         <div class="section-heading fade-up">
           <h2>My Works</h2>
-          <p>Current front-end and database projects I have done in school.</p>
+          <p>Current frontend and database projects I have done in school.</p>
         </div>
 
         <div class="works__grid">
@@ -268,8 +175,8 @@
             <div class="work-card__body">
               <h3 class="work-card__title">Vanilla JS online shop</h3>
               <p class="work-card__desc">
-                Pure Javascript store while using one html file with different
-                views. Store items are fetched from fakestore api.
+                Pure JavaScript store while using one html file with different
+                views. Store items are fetched from Fake Store API.
               </p>
               <div class="tags">
                 <span class="tag">React</span>
@@ -327,11 +234,11 @@
             <div class="work-card__body">
               <h3 class="work-card__title">Hobby inspired website</h3>
               <p class="work-card__desc">
-                First ever javascript project. Assigned by teacher to lock in
+                First ever JavaScript project. Assigned by teacher to lock in
                 understanding of HTML and CSS.
               </p>
               <div class="tags">
-                <span class="tag">Javascript</span>
+                <span class="tag">JavaScript</span>
                 <span class="tag">HTML</span>
                 <span class="tag">CSS</span>
               </div>
@@ -390,7 +297,7 @@
                 stored in json file and can be fetched.
               </p>
               <div class="tags">
-                <span class="tag">Javascript</span>
+                <span class="tag">JavaScript</span>
                 <span class="tag">React</span>
                 <span class="tag">HTML</span>
                 <span class="tag">CSS</span>
@@ -428,6 +335,165 @@
         </div>
       </div>
     </section>
+    <!-- ══════════════ WHAT I'VE BEEN UP TO ══════════════ -->
+    <section
+      id="events"
+      class="section--border"
+      style="padding: 6rem 1.5rem; background: #fff"
+    >
+      <div class="events__inner">
+        <div class="events__heading fade-up">
+          <h2>What I've Been Up To</h2>
+          <p>Achievements, events, and milestones</p>
+        </div>
+
+        <div class="events__grid">
+          <!-- All Events - Clickable Cards -->
+          <div class="event-card fade-up" data-modal-id="event-1" id="myevent">
+            <div class="event-card__header">
+              <h4 class="event-card__title">
+                Hosted Internship Panel Discussion
+              </h4>
+              <span class="event-card__date">March 2026</span>
+            </div>
+            <p class="event-card__location">VOCO school</p>
+            <p class="event-card__desc">
+              I hosted and coordinated an internship panel discussing internship
+              for software students in VOCO. Event featured guests from Telia,
+              Astro Baltics, GotoAndPlay, Praktikal, Concise Solutsions,
+              playtech.
+            </p>
+            <span class="event-badge event-badge--event"
+              >see more
+              <svg
+                class="popup"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000000"
+                width="16"
+                height="16"
+                viewBox="0 0 32 32"
+                version="1.1"
+              >
+                <title>popout</title>
+                <path
+                  d="M15.694 13.541l2.666 2.665 5.016-5.017 2.59 2.59 0.004-7.734-7.785-0.046 2.526 2.525-5.017 5.017zM25.926 16.945l-1.92-1.947 0.035 9.007-16.015 0.009 0.016-15.973 8.958-0.040-2-2h-7c-1.104 0-2 0.896-2 2v16c0 1.104 0.896 2 2 2h16c1.104 0 2-0.896 2-2l-0.074-7.056z"
+                />
+              </svg>
+            </span>
+          </div>
+
+          <div class="event-card fade-up delay-1" data-modal-id="event-2">
+            <div class="event-card__header">
+              <h4 class="event-card__title">First Hackathon</h4>
+              <span class="event-card__date">March 2026</span>
+            </div>
+            <p class="event-card__location">VOCO school</p>
+            <p class="event-card__desc">
+              Shipped a social icebreaker card game under in 2 days with the
+              team of 3. Learned rapid prototyping and collaboration and use of
+              AI.
+            </p>
+            <span class="event-badge event-badge--event"
+              >see more
+              <svg
+                class="popup"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000000"
+                width="16"
+                height="16"
+                viewBox="0 0 32 32"
+                version="1.1"
+              >
+                <title>popout</title>
+                <path
+                  d="M15.694 13.541l2.666 2.665 5.016-5.017 2.59 2.59 0.004-7.734-7.785-0.046 2.526 2.525-5.017 5.017zM25.926 16.945l-1.92-1.947 0.035 9.007-16.015 0.009 0.016-15.973 8.958-0.040-2-2h-7c-1.104 0-2 0.896-2 2v16c0 1.104 0.896 2 2 2h16c1.104 0 2-0.896 2-2l-0.074-7.056z"
+                />
+              </svg>
+            </span>
+          </div>
+
+          <div class="event-card fade-up delay-2" data-modal-id="event-3">
+            <div class="event-card__header">
+              <h4 class="event-card__title">Visited Register OÜ</h4>
+              <span class="event-card__date">March 2026</span>
+            </div>
+            <p class="event-card__location">
+              <i
+                data-lucide="building-2"
+                style="
+                  width: 1rem;
+                  height: 1rem;
+                  vertical-align: middle;
+                  margin-right: 0.25rem;
+                "
+              ></i>
+              Tartu Tähe tn 129b
+            </p>
+            <p class="event-card__desc">
+              Gained industry insights on IT careers and the advantages of
+              working in small teams.
+            </p>
+            <span class="event-badge event-badge--event"
+              >see more
+              <svg
+                class="popup"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000000"
+                width="16"
+                height="16"
+                viewBox="0 0 32 32"
+                version="1.1"
+              >
+                <title>popout</title>
+                <path
+                  d="M15.694 13.541l2.666 2.665 5.016-5.017 2.59 2.59 0.004-7.734-7.785-0.046 2.526 2.525-5.017 5.017zM25.926 16.945l-1.92-1.947 0.035 9.007-16.015 0.009 0.016-15.973 8.958-0.040-2-2h-7c-1.104 0-2 0.896-2 2v16c0 1.104 0.896 2 2 2h16c1.104 0 2-0.896 2-2l-0.074-7.056z"
+                />
+              </svg>
+            </span>
+          </div>
+
+          <div class="event-card fade-up delay-3" data-modal-id="event-4">
+            <div class="event-card__header">
+              <h4 class="event-card__title">First client project</h4>
+              <span class="event-card__date">February 2026</span>
+            </div>
+            <p class="event-card__location">VOCO School</p>
+            <p class="event-card__desc">
+              Made simple WordPress webiste to small business. Project main
+              focus was expriencing project with team.
+            </p>
+            <span class="event-badge event-badge--event"
+              >see more
+              <svg
+                class="popup"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000000"
+                width="16"
+                height="16"
+                viewBox="0 0 32 32"
+                version="1.1"
+              >
+                <title>popout</title>
+                <path
+                  d="M15.694 13.541l2.666 2.665 5.016-5.017 2.59 2.59 0.004-7.734-7.785-0.046 2.526 2.525-5.017 5.017zM25.926 16.945l-1.92-1.947 0.035 9.007-16.015 0.009 0.016-15.973 8.958-0.040-2-2h-7c-1.104 0-2 0.896-2 2v16c0 1.104 0.896 2 2 2h16c1.104 0 2-0.896 2-2l-0.074-7.056z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ MODAL ══════════════ -->
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal" id="modal">
+      <div class="modal__header">
+        <button class="modal__close" id="modal-close" aria-label="Close modal">
+          <i data-lucide="x" style="width: 1.5rem; height: 1.5rem"></i>
+        </button>
+      </div>
+      <div class="modal__content" id="modal-content"></div>
+    </div>
 
     <!-- ══════════════ EXPERIENCE ══════════════ -->
     <section
@@ -442,6 +508,28 @@
         </div>
 
         <div class="exp__grid">
+          <div class="exp-card fade-up delay-2">
+            <div class="exp-card__icon">
+              <i
+                data-lucide="briefcase"
+                style="width: 1.25rem; height: 1.25rem"
+              ></i>
+            </div>
+            <p class="exp-card__role">Customer service employee</p>
+            <p class="exp-card__company">Tõrva VM OÜ</p>
+            <p class="exp-card__period">
+              <i
+                data-lucide="calendar"
+                style="width: 0.875rem; height: 0.875rem"
+              ></i>
+              2023 and 2024 summer
+            </p>
+            <p class="exp-card__desc">
+              My first real job at water spa. Learned taking responsibility,
+              making systems, teamwork, communicating with clients and
+              maintaining team relationships.
+            </p>
+          </div>
           <div class="exp-card fade-up">
             <div class="exp-card__icon">
               <i
@@ -486,29 +574,6 @@
               effective.
             </p>
           </div>
-
-          <div class="exp-card fade-up delay-2">
-            <div class="exp-card__icon">
-              <i
-                data-lucide="briefcase"
-                style="width: 1.25rem; height: 1.25rem"
-              ></i>
-            </div>
-            <p class="exp-card__role">Customer service employee</p>
-            <p class="exp-card__company">Tõrva VM OÜ</p>
-            <p class="exp-card__period">
-              <i
-                data-lucide="calendar"
-                style="width: 0.875rem; height: 0.875rem"
-              ></i>
-              2023 and 2024 summer
-            </p>
-            <p class="exp-card__desc">
-              My first real job at water spa. Learned taking responsibility,
-              making systems, teamwork, communicating with clients and
-              maintaining team relationships.
-            </p>
-          </div>
         </div>
       </div>
     </section>
@@ -523,35 +588,16 @@
         <div class="edu__grid">
           <!-- Formal -->
           <div class="edu__col">
-            <h3 class="fade-up">
-              <i
-                data-lucide="graduation-cap"
-                style="width: 1.25rem; height: 1.25rem; color: var(--sky-600)"
-              ></i>
-              Academic Journey
-            </h3>
-            <ul class="edu__timeline">
+            <div class="schools">
               <li class="edu__item fade-left">
-                <div class="edu__dot">
-                  <i
-                    data-lucide="book-open"
-                    style="width: 1rem; height: 1rem"
-                  ></i>
-                </div>
                 <div class="edu__body">
-                  <h4>tartu rakenduslik kolledž</h4>
+                  <h4>Tartu Rakenduslik Kolledž</h4>
                   <p class="degree">Software Engineer</p>
                   <p class="period">2025 – Present</p>
                   <p class="details">Traditional style school, session study</p>
                 </div>
               </li>
               <li class="edu__item fade-left delay-1">
-                <div class="edu__dot">
-                  <i
-                    data-lucide="book-open"
-                    style="width: 1rem; height: 1rem"
-                  ></i>
-                </div>
                 <div class="edu__body">
                   <h4>Valga Gümnaasium</h4>
                   <p class="degree">Middle school Education</p>
@@ -559,41 +605,6 @@
                   <p class="details">Public school, economic focused</p>
                 </div>
               </li>
-            </ul>
-          </div>
-
-          <div class="edu__col fade-right">
-            <div class="courses-card">
-              <h3>
-                <i
-                  data-lucide="book-open"
-                  style="width: 1.25rem; height: 1.25rem; color: var(--sky-600)"
-                ></i>
-                Online Courses &amp; Certifications
-              </h3>
-              <ul class="courses-list">
-                <li>
-                  <i
-                    data-lucide="check-circle-2"
-                    style="width: 1.25rem; height: 1.25rem"
-                  ></i>
-                  Get Started using Google Analytics GA4
-                </li>
-                <li>
-                  <i
-                    data-lucide="check-circle-2"
-                    style="width: 1.25rem; height: 1.25rem"
-                  ></i>
-                  Manage GA Data and Learn to Read Reports
-                </li>
-                <li>
-                  <i
-                    data-lucide="check-circle-2"
-                    style="width: 1.25rem; height: 1.25rem"
-                  ></i>
-                  Sass For the Beginners Course – Let's go ahead
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -606,13 +617,6 @@
         <p>© <span id="year"></span> Kaido Kasuk. All rights reserved.</p>
       </div>
     </footer>
-
-    <div class="lightbox" id="lightbox" aria-hidden="true">
-      <button class="lightbox__close" type="button" aria-label="Close image">
-        ×
-      </button>
-      <img class="lightbox__image" src="" alt="" />
-    </div>
 
     <script src="app.js"></script>
   </body>
