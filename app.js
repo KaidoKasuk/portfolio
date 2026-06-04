@@ -99,8 +99,8 @@ const modalData = {
 
       <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--neutral-900)">First Client project</h3>
       <p>In a team of three I was the main developer and later the leader since team leader left the project. Project took over 3 months.</p>
-        <p> Most of the porject time was learning theory and working though every step from theory</p>
-      <p style="margin-top: 1rem"><strong>Main Theory we went through</strong></p>
+        <p> Most of the project time was learning theory and working though every step.</p>
+      <p style="margin-top: 1rem"><strong>Main theory points we went through</strong></p>
       <ul style="margin-top: 0.5rem; margin-left: 1.5rem; color: var(--neutral-600)">
         <li>SWOT</li>
         <li>as is and to be</li>
