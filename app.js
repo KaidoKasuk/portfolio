@@ -45,10 +45,10 @@ const modalData = {
     content: `
       <img src="./assets/voco intership panel.JPG" alt="Internship Panel" style="width: 100%; height: auto; margin-bottom: 1.5rem; border-radius: 0.5rem;">
       <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--neutral-900)">Led Internship Panel Discussion</h3>
-      <p>In March 2026, I successfully organized and cohosted an internship panel at VOCO school featuring industry leaders from top Estonian tech companies. This was a significant achievement demonstrating leadership and managing events.</p>
-      <p>Event featured guests from Telia,
-        Astro Baltics, GotoAndPlay, Praktikal, Concise Solutsions,
-        playtech.<p>
+      <p>In March 2026, I successfully organized and co-hosted an internship panel at VOCO school featuring industry leaders from top Estonian tech companies. This was a significant achievement demonstrating leadership and managing events.</p>
+      <p>The event featured guests from Telia,
+        Astro Baltics, GotoAndPlay, Praktikal, Concise Solutions,
+        Playtech.<p>
       <p style="margin-top: 1rem"><strong>What I learned:</strong></p>
       <ul style="margin-top: 0.5rem; margin-left: 1.5rem; margin-bottom: 1.5rem; color: var(--neutral-600)">
         <li>Public speaking and event coordination</li>
@@ -86,7 +86,7 @@ const modalData = {
       <ul style="margin-top: 0.5rem; margin-left: 1.5rem; color: var(--neutral-600)">
         <li>How small teams operate efficiently and with high autonomy</li>
         <li>The pros and cons of working in smaller companies vs enterprises</li>
-        <li>Real-world software development, everthing is automated </li>
+        <li>Real-world software development, everything is automated </li>
         <li>Industry perspectives on hiring and career growth</li>
       </ul>
       <p style="margin-top: 1rem"><strong>Location:</strong> Tartu Tähe tn 129b</p>
@@ -97,16 +97,16 @@ const modalData = {
     content: `
      <img src="./assets/clientprojectaboutme.png" alt="Internship Panel prep" style="width: 100%; height: auto; margin-bottom: 1.5rem; border-radius: 0.5rem;">
 
-      <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--neutral-900)">First Client project</h3>
-      <p>In a team of three I was the main developer and later the leader since team leader left the project. Project took over 3 months.</p>
-        <p> Most of the project time was learning theory and working though every step.</p>
+      <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--neutral-900)">First client project</h3>
+      <p>In a team of three I was the main developer and later the leader since the team leader left the project. Project took over 3 months.</p>
+        <p> Most of the project time was learning theory and working through every step.</p>
       <p style="margin-top: 1rem"><strong>Main theory points we went through</strong></p>
       <ul style="margin-top: 0.5rem; margin-left: 1.5rem; color: var(--neutral-600)">
         <li>SWOT</li>
-        <li>as is and to be</li>
+        <li>As Is and To Be</li>
         <li>Training plan for client</li>
-        <li>Personas for the webiste</li>
-        <li>User Stories</li>
+        <li>Personas for the website</li>
+        <li>User stories</li>
          <li>Test plan</li>
       </ul>
 
